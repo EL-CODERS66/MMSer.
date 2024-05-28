@@ -1,0 +1,328 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+nav {
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  width: 96%;
+  left: 1%;
+  z-index: 2;
+  display: flex;
+  vertical-align: super;
+}
+
+.icon {
+  height: 60px;
+}
+
+.MainDivBg {
+  width: 100%;
+  height: 130%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.MainDivUnderlayer {
+  position: absolute;
+  top: 22vh;
+  right: 0%;
+  z-index: 1;
+  height: 65vh;
+}
+
+.MainDivName {
+    font-family: "Monda", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+    position: absolute;
+    top: 37.5%;
+    font-size: 50px;
+    left: 4%;
+    line-height: 1.25;
+}
+
+.MainDivNameS {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 2;
+  position: absolute;
+  top: 56%;
+  font-size: 33px;
+  left: 4%;
+  line-height: 1.25;
+}
+
+/* ______________ */
+
+.Structure {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 99;
+  opacity: 0.5;
+  height: 300%;
+  display: none;
+}
+
+/* ---------------- */
+
+/* ---------Services---------- */
+
+.SBT {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 50vw;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Services {
+  margin-left: 17vw;
+  margin-right: 17vw;
+  display: flex;
+  margin-top: 10vh;
+  text-align: center;
+  align-items: center;
+}
+
+.Services2 {
+  margin-left: 17vw;
+  margin-right: 17vw;
+  display: flex;
+}
+
+.Info {
+  margin: 1.5vh;
+  width: 20vw;
+  height: 55vh;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.SIM {
+  height: 50px;
+}
+
+.SIT {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.SID {
+  width: 16vw;
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 13px;
+}
+
+.SIB {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: 75%;
+  border: none;
+  margin-top: 10%;
+  border-radius: 5px;
+}
+
+/* ----------FOOTER--------- */
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 70px;
+}
+
+.FavFooter {
+  height:50px;
+  position: absolute;
+  top: 278.5%;
+  right: 20px;
+  z-index: 4;
+}
+
+.footerinfo {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: auto;
+  vertical-align: super;
+  margin-left: 2.5%;
+  display: flex;
+}
+
+.FT {
+  margin: auto;
+  margin-left: 30px;
+}
+
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+@media only screen and (max-width: 925px) {
+
+  .MainDivUnderlayer {
+    display: none;
+  }
+
+  .Services {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: auto;
+  }
+  
+  .Services2 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: auto;
+  }
+
+  .Info {
+    width: 25vw;
+    height: 55vh;
+  }
+
+  .SID {
+    width: 21vw;
+    margin-left: 1vw;
+  }
+
+  .FavFooter {
+    height:50px;
+    right: 20px;
+  }
+
+}
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+@media only screen and (max-width: 811px) {
+
+  .SIB {
+    width: 90%;
+  }
+
+.MainDivName {
+  width: 100%;
+  text-align: center;
+  left: 0%;
+}
+
+.MainDivNameS {
+  width: 100%;
+  text-align: center;
+  left: 0%;
+}
+
+.FavFooter {
+  display: none;
+}
+
+}
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+@media only screen and (max-width: 711px) {
+
+  .footer {
+    display: block;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  
+  .footerinfo {
+    display: block;
+    height: auto;
+  }
+
+  .FT {
+    margin: 0px;
+  }
+
+  .Services {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: auto;
+    display: block;
+  }
+  
+  .Services2 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: auto;
+    display: block;
+  }
+
+  .Info {
+    width: 45vw;
+    height: 65vh;
+    margin-left: 20vw;
+  }
+
+  .SID {
+    width: 41vw;
+    font-size: 15px;
+  }
+
+}
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+@media only screen and (max-width: 556px) {
+
+  .MainDivName {
+    font-size: 7.5vw;
+    left: 0%;
+    width: 100%;
+    line-height: 1.25;
+}
+
+.MainDivNameS {
+  top: 47.5vh;
+  font-size: 4.5vw;
+  left: 0%;
+  width: 100%;
+  line-height: 1.25;
+}
+
+}
