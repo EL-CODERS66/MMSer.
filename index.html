@@ -3,23 +3,24 @@
 
  <head> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Acount_Style.css">
   <link rel="stylesheet" href="Index_Style.css">
   <link rel="icon" type="image/x-icon" href="Fav.png">
   <meta charset="UTF-8"> 
   <title>Mohanad Mohamed</title> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Monda&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&family=Monda&display=swap" rel="stylesheet">
  </head> 
 
  <body class="body"> 
+  <!-- ---------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------->
 
   <div class="MainDiv" style="height: 50vh;">
     
     <nav>
       <img src="Fav.png" class="icon" style="margin-right: auto;">
-      <img src="Menu.png" class="icon" style="margin-left: auto; height: 50px;display: none;">
+      <a href="AR.Html" style="text-decoration: none;"><button class="MDB" id="MDB" style="margin-top: auto;margin-bottom: auto;"><h1 style="font-size: 19px;height: 40px;text-align: center;margin-top: -5px;">عربي</h1><img src="Menu.png" style="margin-top: 1.5px;height: 30px;margin-left: 10px;"></button></a>
     </nav>
 
     <img src="MainDiv.png" class="MainDivBg">
@@ -27,8 +28,7 @@
     <div class="central">
       <h1 class="MainDivName" style="margin-top: auto;margin-bottom: auto;">HELLO, I'M</h1>
       <h1 class="MainDivName" style="margin-top: auto;margin-bottom: auto;">MOHANAD MOHAMED</h1>
-      <h2 class="MainDivNameS" style="margin-top: auto;margin-bottom: auto;"><span class="auto-type"> </span></h2>
-        <button class="MDB" href="" style="margin-top: auto;margin-bottom: auto; display:none">CONTACT ME</button>
+      <h2 class="MainDivNameS" style="margin-top: auto;margin-bottom: auto;"><span class="auto-typeEN"> </span></h2>
     </div>
    
   </div>
@@ -72,7 +72,7 @@
     <div class="Info">
       <img src="Other.png" class="SIM" style="margin-top: 30%;">
       <h1 class="SIT">FOR MORE INFO.</h1>
-      <button class="SIB" href="">CONTACT ME</button>
+      <button class="SIB" id="SIB">CONTACT ME</button>
     </div>
     
   </div>
@@ -80,15 +80,13 @@
 
 
 <div class="footer">
-  <img src="FavFooter.png" class="FavFooter">
-  <div class="footerinfo">
-    <h2 style="margin: auto;">CONTACT ME:</h1>
-    <h4 class="FT"><img src="Phone.png" style="height: 25px;">     +20 109 925 1580</h4>
-    <h4 class="FT"><img src="WhatsApp.png" style="height: 25px;">     +20 109 925 1580</h4>
-    <h4 class="FT"><img src="Location.png" style="height: 25px;">     Portsaid</h4>
-  </div>
-
+  <img src="EN_CONT.png" style="height: 500px;">
 </div>
+
+
+    <div class="COPUP" id="COPUP">
+      <img src="CONTACT_CARD_EN.png" id="COPUPC" class="COPUPC" style="height: 500px;margin: auto;">
+    </div>
 
  </body>
 
@@ -96,3 +94,11 @@
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script type="text/javascript" src="Script.js"></script>
+<script>
+var typed = new Typed(".auto-typeEN", {
+    strings: ["FULLSTACK WEBSITE DEVOLOPER","GRAPHIC DESIGNER","DATA ANALYST"],
+    typeSpeed: 150,
+    backSpeed: 75,
+    loop: true
+})
+</script>
