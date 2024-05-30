@@ -1,3 +1,55 @@
+.COPUP {
+  display: none;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.COPUPC {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+}
+
+#COPUP.show {
+  display: flex;
+  
+}
+#COPUP.hide {
+  display: none;
+  
+}
+@keyframes show {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
 * {
   margin: 0px;
   padding: 0px;
@@ -16,6 +68,22 @@ nav {
   z-index: 2;
   display: flex;
   vertical-align: super;
+}
+
+.MDB {
+  font-family: 'Cairo', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:'slnt' 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  height: 50px;
+  display: flex;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
 }
 
 .icon {
@@ -69,19 +137,6 @@ nav {
   line-height: 1.25;
 }
 
-.MDB {
-  font-family: "Monda", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  background-color: black;
-  color: white;
-  width: 20%;
-  border: none;
-  margin-top: 2%;
-  border-radius: 5px;
-}
-
 
 /* ---------Services---------- */
 
@@ -96,7 +151,7 @@ nav {
   font-family: "Monda", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 50vw;
+  width: 100vw;
   text-align: center;
   margin-top: 10vh;
   font-size: 45px;
@@ -176,33 +231,9 @@ nav {
   background-color: black;
   color: white;
   display: flex;
-  height: 70px;
+  /* height: 70px; */
   margin-top: 20vh;
-}
-
-.FavFooter {
-  height:50px;
-  right: 20px;
-  z-index: 4;
-  margin-right: 25px;
-  margin-top: 10px;
-
-}
-
-.footerinfo {
-  font-family: "Monda", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-right: auto;
-  vertical-align: super;
-  margin-left: 25px;
-  display: flex;
-  width: 80%;
-}
-
-.FT {
-  margin: auto;
-  margin-left: 30px;
+  justify-content: center;
 }
 
 
