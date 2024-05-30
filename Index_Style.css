@@ -40,13 +40,18 @@ nav {
   height: 65vh;
 }
 
+.central {
+  margin-top: 35vh;
+  margin-left: 2.5vw;
+}
+
 .MainDivName {
     font-family: "Monda", sans-serif;
     font-weight: 400;
     font-style: normal;
     z-index: 2;
-    position: absolute;
-    top: 37.5%;
+    /* position: absolute; */
+    /* top: 37.5%; */
     font-size: 50px;
     left: 4%;
     line-height: 1.25;
@@ -57,29 +62,35 @@ nav {
   font-weight: 400;
   font-style: normal;
   z-index: 2;
-  position: absolute;
-  top: 56%;
+  /* position: absolute;
+  top: 56%; */
   font-size: 33px;
   left: 4%;
   line-height: 1.25;
 }
 
-/* ______________ */
-
-.Structure {
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 99;
-  opacity: 0.5;
-  height: 300%;
-  display: none;
+.MDB {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: 20%;
+  border: none;
+  margin-top: 2%;
+  border-radius: 5px;
 }
 
-/* ---------------- */
 
 /* ---------Services---------- */
+
+.Middle {
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
 
 .SBT {
   font-family: "Monda", sans-serif;
@@ -94,29 +105,24 @@ nav {
 }
 
 .Services {
-  margin-left: 17vw;
-  margin-right: 17vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
   display: flex;
   margin-top: 10vh;
-  text-align: center;
-  align-items: center;
-}
-
-.Services2 {
-  margin-left: 17vw;
-  margin-right: 17vw;
-  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
 }
 
 .Info {
-  margin: 1.5vh;
-  width: 20vw;
-  height: 55vh;
+  width: 275px;
+  height: 400px;
   align-items: center;
   text-align: center;
   border: 2px solid black;
   border-radius: 5px;
   padding: 15px;
+  margin: 20px;
 }
 
 .SIM {
@@ -130,7 +136,7 @@ nav {
   font-size: 25px;
 }
 
-.SID {
+/* .SID {
   width: 16vw;
   font-family: "Monda", sans-serif;
   font-weight: 400;
@@ -138,6 +144,16 @@ nav {
   margin-left: 1vw;
   margin-top: 3vh;
   font-size: 13px;
+} */
+
+.SID {
+  width: 90%; /* Adjust the width as needed */
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto; /* Center the text horizontally */
+  font-size: 1rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
 }
 
 .SIB {
@@ -161,14 +177,16 @@ nav {
   color: white;
   display: flex;
   height: 70px;
+  margin-top: 20vh;
 }
 
 .FavFooter {
   height:50px;
-  position: absolute;
-  top: 278.5%;
   right: 20px;
   z-index: 4;
+  margin-right: 25px;
+  margin-top: 10px;
+
 }
 
 .footerinfo {
@@ -177,8 +195,9 @@ nav {
   font-style: normal;
   margin-right: auto;
   vertical-align: super;
-  margin-left: 2.5%;
+  margin-left: 25px;
   display: flex;
+  width: 80%;
 }
 
 .FT {
@@ -197,28 +216,6 @@ nav {
     display: none;
   }
 
-  .Services {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: auto;
-  }
-  
-  .Services2 {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: auto;
-  }
-
-  .Info {
-    width: 25vw;
-    height: 55vh;
-  }
-
-  .SID {
-    width: 21vw;
-    margin-left: 1vw;
-  }
-
   .FavFooter {
     height:50px;
     right: 20px;
@@ -230,11 +227,7 @@ nav {
 -------------------------------
 ------------------------------- */
 
-@media only screen and (max-width: 811px) {
-
-  .SIB {
-    width: 90%;
-  }
+  @media only screen and (max-width: 811px) {
 
 .MainDivName {
   width: 100%;
@@ -275,31 +268,6 @@ nav {
 
   .FT {
     margin: 0px;
-  }
-
-  .Services {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: auto;
-    display: block;
-  }
-  
-  .Services2 {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: auto;
-    display: block;
-  }
-
-  .Info {
-    width: 45vw;
-    height: 65vh;
-    margin-left: 20vw;
-  }
-
-  .SID {
-    width: 41vw;
-    font-size: 15px;
   }
 
 }
