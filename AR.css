@@ -1,9 +1,8 @@
-
 html, body {
-        max-width: 100%;
-        max-height: 100%;
-        overflow-x: hidden;
-    }
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* -------------------------------------------------------------------- */
 
 .COPUP {
@@ -67,35 +66,39 @@ body {
 }
 
 nav {
-  padding: 10px;
+  /* padding: 10px; */
   position: absolute;
-  top: 10px;
-  width: 96%;
-  left: 1%;
+  top: 30px;
+  width: 94%;
+  left: 2%;
   z-index: 2;
   display: flex;
   vertical-align: super;
-  transform: scaleX(-1);
 }
 
 .MDB {
-  font-family: "Monda", sans-serif;
-  font-weight: 400;
+  font-family: 'Cairo', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
+  font-variation-settings:'slnt' 0;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
-  height: 50px;
+  height: 45px;
   display: flex;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
+  border-width: 1px;
+  width: 120px;
+  justify-content: space-evenly;
 }
 
 .icon {
   height: 60px;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
 
 .MainDivBg {
