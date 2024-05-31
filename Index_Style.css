@@ -1,8 +1,8 @@
 html, body {
-        max-width: 100%;
-        max-height: 100%;
-        overflow-x: hidden;
-    }
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* -------------------------------------------------------------------- */
 
 .COPUP {
@@ -67,30 +67,31 @@ body {
 }
 
 nav {
-  padding: 10px;
+  /* padding: 10px; */
   position: absolute;
-  top: 10px;
-  width: 96%;
-  left: 1%;
+  top: 30px;
+  width: 94%;
+  left: 2%;
   z-index: 2;
   display: flex;
   vertical-align: super;
 }
 
 .MDB {
-  font-family: 'Cairo', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:'slnt' 0;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
-  height: 50px;
+  height: 45px;
   display: flex;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px;
+  border-width: 1px;
+  width: 120px;
+  justify-content: space-evenly;
 }
 
 .icon {
@@ -253,12 +254,10 @@ nav {
   .MainDivUnderlayer {
     display: none;
   }
-
-  .FavFooter {
-    height:50px;
-    right: 20px;
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
   }
-
 }
 
 /* -------------------------------
@@ -270,55 +269,28 @@ nav {
 .MainDivName {
   width: 100%;
   text-align: center;
-  left: 0%;
 }
 
 .MainDivNameS {
   width: 100%;
   text-align: center;
-  left: 0%;
 }
-
-.FavFooter {
-  display: none;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
-}
-
-/* -------------------------------
--------------------------------
-------------------------------- */
-
-@media only screen and (max-width: 711px) {
-
-  .footer {
-    display: block;
-    height: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-  }
-  
-  .footerinfo {
-    display: block;
-    height: auto;
-  }
-
-  .FT {
-    margin: 0px;
-  }
 
 }
 
 /* -------------------------------
 -------------------------------
 ------------------------------- */
+
 
 @media only screen and (max-width: 556px) {
 
   .MainDivName {
     font-size: 7.5vw;
-    left: 0%;
     width: 100%;
     line-height: 1.25;
 }
@@ -326,9 +298,12 @@ nav {
 .MainDivNameS {
   top: 47.5vh;
   font-size: 4.5vw;
-  left: 0%;
   width: 100%;
   line-height: 1.25;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 }
