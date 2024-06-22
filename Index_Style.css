@@ -1,0 +1,310 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------------- */
+
+.COPUP {
+  display: none;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.COPUPC {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+}
+
+#COPUP.show {
+  display: flex;
+  
+}
+#COPUP.hide {
+  display: none;
+  
+}
+@keyframes show {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+nav {
+  /* padding: 10px; */
+  position: absolute;
+  top: 30px;
+  width: 94%;
+  left: 2%;
+  z-index: 2;
+  display: flex;
+  vertical-align: super;
+}
+
+.MDB {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  height: 45px;
+  display: flex;
+  padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  width: 120px;
+  justify-content: space-evenly;
+}
+
+.icon {
+  height: 60px;
+}
+
+.MainDivBg {
+  width: 100%;
+  height: 130%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.MainDivUnderlayer {
+  position: absolute;
+  top: 22vh;
+  right: 0%;
+  z-index: 1;
+  height: 65vh;
+}
+
+.central {
+  margin-top: 35vh;
+  margin-left: 2.5vw;
+}
+
+.MainDivName {
+    font-family: "Monda", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+    /* position: absolute; */
+    /* top: 37.5%; */
+    font-size: 50px;
+    left: 4%;
+    line-height: 1.25;
+}
+
+.MainDivNameS {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 2;
+  /* position: absolute;
+  top: 56%; */
+  font-size: 33px;
+  left: 4%;
+  line-height: 1.25;
+}
+
+
+/* ---------Services---------- */
+
+.Middle {
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.SBT {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Services {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  display: flex;
+  margin-top: 10vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.Info {
+  width: 275px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px;
+}
+
+.SIM {
+  height: 50px;
+}
+
+.SIT {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+/* .SID {
+  width: 16vw;
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 1vw;
+  margin-top: 3vh;
+  font-size: 13px;
+} */
+
+.SID {
+  width: 90%; /* Adjust the width as needed */
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto; /* Center the text horizontally */
+  font-size: 1rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
+  margin-top: 20px;
+}
+
+.SIB {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: 75%;
+  border: none;
+  margin-top: 10%;
+  border-radius: 5px;
+}
+
+/* ----------FOOTER--------- */
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  /* height: 70px; */
+  margin-top: 20vh;
+  justify-content: center;
+}
+
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+@media only screen and (max-width: 925px) {
+
+  .MainDivUnderlayer {
+    display: none;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+  @media only screen and (max-width: 811px) {
+
+.MainDivName {
+  width: 100%;
+  text-align: center;
+}
+
+.MainDivNameS {
+  width: 100%;
+  text-align: center;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+}
+
+/* -------------------------------
+-------------------------------
+------------------------------- */
+
+
+@media only screen and (max-width: 556px) {
+
+  .MainDivName {
+    font-size: 7.5vw;
+    width: 100%;
+    line-height: 1.25;
+}
+
+.MainDivNameS {
+  top: 47.5vh;
+  font-size: 4.5vw;
+  width: 100%;
+  line-height: 1.25;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+}
